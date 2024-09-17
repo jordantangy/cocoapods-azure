@@ -28,8 +28,8 @@ steps:
       {
         "files": [
           {
-            "pattern": "/Users/jordanta/Downloads/Cases/314184",
-            "target": "cocoapods-local/"
+            "pattern": "/Users/jordanta/CoconutLib-1.0.tar.gz",
+            "target": "cocoapods-local"
           }
         ]
       }
