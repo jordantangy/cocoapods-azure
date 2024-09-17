@@ -28,7 +28,7 @@ steps:
       {
         "files": [
           {
-            "pattern": "/Users/jordanta/Downloads/Cases/314184/MyPodExample.posdpec",
+            "pattern": "/Users/jordanta/Downloads/Cases/314184",
             "target": "cocoapods-local/"
           }
         ]
