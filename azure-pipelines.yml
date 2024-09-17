@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: Default
 
 steps:
 - script: echo Hello, world!
@@ -19,4 +19,18 @@ steps:
   displayName: 'Run a multi-line script'
 
 
-
+- task: JFrogGenericArtifacts@1
+  inputs:
+    command: 'Upload'
+    connection: 'jordanta-rt'
+    specSource: 'taskConfiguration'
+    fileSpec: |
+      {
+        "files": [
+          {
+            "pattern": "/Users/jordanta/Downloads/Cases/314184/MyPodExample.posdpec",
+            "target": "cocoapods-local/"
+          }
+        ]
+      }
+    failNoOp: true
